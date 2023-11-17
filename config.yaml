@@ -1,0 +1,29 @@
+main:
+  # Set this to null if you are running in prod
+  project_name: llm_gpt
+  experiment_name: development
+  steps: all
+data:
+  sample: "dataset/Agricultural-Science.txt"
+modeling:
+  block_size: 64
+  # the number of batch
+  batch_size: 128
+  # The number iterations we choosed
+  max_iters: 200
+  # learning rate
+  learning_rate: 3e-4
+  eval_iters: 100
+  # the value of dropout
+  dropout: 0.2
+  # embedding dimension
+  num_embed: 384
+  # the number of heads we'd like
+  num_head: 4
+  # the number of block decoder we've
+  num_layer: 4
+  # Fraction of data to use for test (the remaining will be used for train and validation)
+  test_size: 0.8
+  # Fraction of remaining data to use for validation
+  val_size: 0.2
+  

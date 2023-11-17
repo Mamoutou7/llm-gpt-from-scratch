@@ -4,6 +4,7 @@ Created on Thu Nov  16 17:20:39 2023
 @author: Mamoutou Fofana
 """
 
+import torch
 import torch.nn as nn
 
 

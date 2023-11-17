@@ -1,0 +1,10 @@
+name: llm_gpt
+dependencies:
+  - python=3
+  - notebook=6.5.2
+  - jupyter=1.0.0
+  - pip=22.3.1
+  - pip:
+      - pylzma
+      - numpy  
+      - torch
